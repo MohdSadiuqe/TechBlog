@@ -1,0 +1,81 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="3.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+  <display-name>JSTL Example</display-name>
+
+  <!-- Servlet Configuration -->
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.tech.blog.servlets.RegisterServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Servlet Configuration -->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.tech.blog.servlets.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Servlet Configuration -->
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.tech.blog.servlets.LogoutServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EditProfileServlet</servlet-name>
+    <servlet-class>com.tech.blog.servlets.EditProfileServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EditProfileServlet</servlet-name>
+    <url-pattern>/EditProfileServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddPostServlet</servlet-name>
+    <servlet-class>com.tech.blog.servlets.AddPostServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddPostServlet</servlet-name>
+    <url-pattern>/AddPostServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LikeServlet</servlet-name>
+    <servlet-class>com.tech.blog.servlets.LikeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LikeServlet</servlet-name>
+    <url-pattern>/LikeServlet</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>CORS</filter-name>
+    <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CORS</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+</web-app>
